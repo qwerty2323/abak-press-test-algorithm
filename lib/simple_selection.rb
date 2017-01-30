@@ -5,8 +5,8 @@ module SimpleSelection
     RawData.populate
   end
 
-  def search(&block)
-    data.select(&block)
+  def search(array=data, &block)
+    array.select(&block)
   end
 end
 SimpleSelection.extend SimpleSelection
